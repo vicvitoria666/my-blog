@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/home/home.jsx";
 import Onu from "./pages/onu to world/onu.jsx";
 import Portifolio from "./pages/portfolio/portfolio.jsx";
+import Footer from "./components/footer.jsx";
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -24,7 +25,7 @@ const Content = styled.div`
 `;
 
 const Header = styled.header`
-  background-color: #e29578;
+  background-color: #ef7a85;
   width: 26vw;
   height: 100vh;
   display: flex;
@@ -43,7 +44,7 @@ const Img = styled.img`
 
 const Name = styled.h1`
   color: #000814;
-  text-shadow: 0 1px 2px #495057;
+  text-shadow: 0 2px 4px #571089;
 `;
 
 const Ul = styled.ul`
@@ -58,8 +59,19 @@ const Ul = styled.ul`
 const Li = styled.li`
   list-style: none;
   background-color: #5e548e;
-  border-left: 8px solid #f98da0;
   padding: 12px;
+  border-left: 10px solid #ff99c8; 
+  border-top: 1px solid #ff99c8;
+  border-right: 1px solid #ff99c8;
+  border-bottom: 1px solid #ff99c8;
+  margin-bottom: 3px;
+  &:hover{
+  background-color: #a966f5;
+  border-left: 10px solid #e26eff; 
+  border-top: 1px solid #e26eff;
+  border-right: 1px solid #e26eff;
+  border-bottom: 1px solid #e26eff;
+  }
 `;
 
 const NavLink = styled(Link)`
@@ -91,19 +103,14 @@ function App() {
                 </NavLink>
               </Li>
               <Li>
-                <Link to="/Portifólio">
+                <NavLink to="/Portifólio">
                   Portfólio
-                </Link>
+                </NavLink>
               </Li>
               <Li>
-                <Link to="/Onu">
+                <NavLink to="/Onu">
                   Para um mundo melhor
-                </Link>
-              </Li>
-              <Li>
-                <Contacts href="#Contacts">
-                 Contacts
-                </Contacts>
+                </NavLink>
               </Li>
             </Ul>
           </nav>
@@ -116,7 +123,9 @@ function App() {
           </Routes>
         </Content>
       </Container>
+      <Footer/>
     </Router>
+    
   );
 }
 
