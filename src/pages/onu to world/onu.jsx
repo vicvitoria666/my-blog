@@ -220,7 +220,6 @@ export default function Onu() {
       <SectionDefault width={'100%'} flexDirection={'column'} >
         <Text margin={'0% 1% 1% 3%'} Size={'6vh'} Weight={'600'} color={'#2b2c28'}>Os Objetivos de Desenvolvimento Sustentável no Brasil</Text>
         <Text margin={'0 1%'} Size={'2.5vh'} Weight={'400'} color={'#2b2c28'}>Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.</Text>
-        <Text  margin={'1% 1%'} Size={'2.5vh'} Weight={'400'} color={'#2b2c28'}>Todos temos como contribuir com um mundo melhor e tudo começa com uma ideia que se torna um sonho, ao compartilhar podemos dar vida a esses sonhos de um mundo melhor.</Text>
         <SiteDefault width={'100%'} display={'block'} margin={'1% 1%'} >
           <Text Align={"center"} width={'100%'} Size={'3vh'} Weight={'400'} color={'#2b2c28'}>"Pensar no futuro é agir no agora."</Text>
         </SiteDefault>

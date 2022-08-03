@@ -24,6 +24,7 @@ const Container = styled.div`
 const Main = styled.div`
   width: 74vw;
   padding:0vw 10vh 1vh 20vh;
+  min-height: 90vh;
 `;
 
 const Header = styled.header`
